@@ -1,0 +1,27 @@
+{
+  "name": "h5ds",
+  "version": "1.0.0",
+  "description": "拖拽式h5引擎",
+  "main": "dist/h5ds.iife.js",
+  "module": "dist/h5ds.esm.js",
+  "unpkg": "dist/h5ds.js",
+  "jsdelivr": "dist/h5ds.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/h5-design/h5ds.git"
+  },
+  "keywords": [
+    "h5ds",
+    "react"
+  ],
+  "author": "Cecil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/h5-design/h5ds/issues"
+  },
+  "homepage": "https://github.com/h5-design/h5ds#readme",
+  "sideEffects": false
+}
