@@ -7,7 +7,8 @@
   "unpkg": "dist/h5ds.js",
   "jsdelivr": "dist/h5ds.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx rollup -c",
+    "dev": "npx rollup -c -w"
   },
   "repository": {
     "type": "git",
