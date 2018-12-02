@@ -3,6 +3,8 @@ import path from 'path'
 import nodeResolve from 'rollup-plugin-node-resolve'
 import json from 'rollup-plugin-json'
 import commonjs from 'rollup-plugin-commonjs'
+// import uglify from 'rollup-plugin-uglify'
+// import babel from 'rollup-plugin-babel'
 
 export default {
   input: path.resolve('src/index.js'),
@@ -28,5 +30,8 @@ export default {
       file: 'dist/h5ds.amd.js',
       format: 'amd'
     }
-  ]
+  ],
+  watch: {
+    exclude: ['node_modules/**']
+  }
 }
