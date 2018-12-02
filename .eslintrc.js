@@ -11,7 +11,7 @@ module.exports = {
     node: true,
     browser: true
   },
-  plugins: ['typescript'],
+  plugins: ['typescript', 'plugin:vue/base'],
   extends: ['eslint:recommended', 'plugin:vue/essential'],
   globals: {},
   rules: {

@@ -59,9 +59,9 @@
   // 这个目录下的代码不会被 typescript 处理
   "exclude": [
     "node_modules",
-    "config",
     "dist",
     "scripts",
-    "public"
+    "packages",
+    "static"
   ]
 }
