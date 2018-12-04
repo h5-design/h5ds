@@ -4,21 +4,23 @@ import nodeResolve from 'rollup-plugin-node-resolve'
 import json from 'rollup-plugin-json'
 import commonjs from 'rollup-plugin-commonjs'
 import alias from 'rollup-plugin-alias'
-import typescript from 'rollup-plugin-typescript'
+// import typescript from 'rollup-plugin-typescript'
 // import uglify from 'rollup-plugin-uglify'
-// import babel from 'rollup-plugin-babel'
+import babel from 'rollup-plugin-babel'
 
 export default {
-  input: path.resolve('src/index.ts'),
+  input: path.resolve('src/index.js'),
   plugins: [
-    typescript(),
+    babel({
+      exclude: 'node_modules/**'
+    }),
     nodeResolve(),
     commonjs(),
     json(),
     alias({
       core: './src/core',
       src: './src',
-      resolve: ['.jsx', '.js', '.ts', '.tsx', '.vue', '.json']
+      resolve: ['.jsx', '.js', '.vue', '.json']
     })
   ],
   output: [

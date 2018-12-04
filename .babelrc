@@ -1,11 +1,30 @@
 {
   "presets": [
-    ["env", {
-      "modules": "commonjs",
-      "target": [
-        "last 2 versions"
-      ]
+    "@babel/react"
+  ],
+  "plugins": [
+    "react-hot-loader/babel",
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "corejs": false,
+        "helpers": true,
+        "regenerator": true,
+        "useESModules": false
+      }
+    ],
+    ["@babel/proposal-decorators", {
+      "legacy": true
     }],
-    "stage-2"
+    ["@babel/proposal-class-properties", {
+      "loose": true
+    }],
+    ["@babel/proposal-pipeline-operator", {
+      "proposal": "minimal"
+    }],
+    ["@babel/proposal-optional-chaining"],
+    ["@babel/proposal-function-bind"],
+    ["@babel/proposal-export-namespace-from"],
+    ["@babel/proposal-export-default-from"]
   ]
 }
